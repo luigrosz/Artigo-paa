@@ -30,12 +30,8 @@ int main(int argc, char *argv[]) {
   long lista[quantidade];
   preencher_lista(lista, quantidade, numeroMaximo);
 
-  for (long i = 0; i < quantidade; i++) {
-    if (i == 0) {
-      printf("%ld, \n", lista[i]);
-    }
+  for (long i = 0; i < quantidade; i++)
     fprintf(file, "%ld\n", lista[i]);
-  }
 
   fclose(file);
   return 0;
